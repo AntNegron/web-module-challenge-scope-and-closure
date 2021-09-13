@@ -59,6 +59,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+- Closure allows a child function to access variables from a higher scope even if that scope has already been closed, terminated, or called.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -80,8 +81,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+- closure is used with the const of dansRoll and zoesRoll because even though it has no variabels of its own, it has been assigned to personalDice within the function.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+- Dan's name is always the same but the number he would roll could be different
 c. What is the lexical scope of `newRoll`? 
+-the lexical scope of the newRoll is the function of personalDice.
 
 
 ### Task 3 - Stretch Goals
